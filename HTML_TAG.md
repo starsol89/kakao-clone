@@ -1,55 +1,51 @@
 # TAG NOT SUPPORTED IN HTML5
 
-      <a> href, hreflang, media, ping, rel, target, type
+## HTML5의 New Semantic/Structural Elements
 
-    <article> Defines an article
-    [cite, pubdate]
-    (블로그 글, 포럼 글, 뉴스 기사 등등 내용이 독립적이고 홀로 설 수 있는 내용을 담는다)
+<article>
+Ex)
+  <article>
+      <h1>Google Chrome</h1>
+      <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+  </article>
 
-    <aside> Defines content aside from the page content
-    (주요한 내용이 아니라 부차적인 내용을 담는 태크,
-     aside 요소는 article 요소 안쪽 또는 바깥 쪽에 올 수 있습니다.)
+이 태그는 독립적인 컨텐츠를 지정 합니다. 기사는 독자적으로 이해해야하며 나머지 사이트와 독립적으로 기사를 배포 할 수 있어야 합니다.
+즉, 문서, 페이지, 애플리케이션, 또는 사이트 안에 독립적으로 구분되거나 재사용 가능한 영역을 구성 할 수 있습니다.
+포럼의 글, 매거진/ 신문의 기사, 블로그 글 등이 여기에 포함됩니다.
 
-    <audio> Defines sound content
-    [autobuffer, autoplay, controls, src]
-    (문서에 소리 컨텐츠 포함하기 위해서 사용 됨. src 속성을 이용해 여러 오디오 소스를 포함 할 수 있으며, 브라우저는 그중에서 가장 적합한 소스를 고를 것 입니다.
+<aside>
+Ex)
+    <p>영철이는 오늘 HTML5 태그를 정리하고 있다.<p>
 
-    ---------------------------------------------------------------------------------------------------------------------------------------
+    <aside>
+        <p>보람이는 퇴근 이후에 쉬는 중이다.</p>
+    </aside>
 
-    <body> Defines the body element
-    (HTML 문서의 내용을 나타냅니다. 한 문서에서 하나의 body요소만 존재 할 수 있습니다.)
+이 태그는 문서의 주요 컨텐츠에 별도로 이어진 컨텐츠가 있는 문서의 한 구획을 말한다. 주로 사이드바로 나타냅니다.
 
-    <br> Inserts a single line break
-    (텍스트에서 줄바꿈을 생성 합니다. 주소나 시조 등 줄의 구분이 중요한 내용을 작성할 때 유용합니다.)
+<bdi>
+Ex) 예제와 내용이 있지만 영어를 해석해도 또 코드 결과를 봐도 이해하기 어렵다.. 좀 더 공부하면서 사용법을 알게 되면 다시 정리.
 
-    <button> Defines push button
-    [autofocus, disabled, form, formaction, formenctype, formmethod, formnovalidate, formtarget, name, type, value]
-    (클릭 할 수 있는 버튼을 나타냅니다. 이 요소 안에는 텍스트나 이미지 같은 내용을 넣을 수 있습니다.)
+<details>
+Ex)
+    <details>
+        <summary>details</summary>
+        summary 요소를 사용하여 요약 또는 레이블을 제공 할 수 있습니다. 즉, 누르게 되면 이 글 내용이 그대로 들어남
+    </details>
 
-    ---------------------------------------------------------------------------------------------------------------------------------------
+HTML 세부요소 (<details>)는 위젯이 "열린" 상태로 전환 될 때만 정보를 볼 수 있는 공개 위젯을 생성 합니다.
 
-    <canvas> Defines graphics
-    [height, width]
-    (자바스크립트로 웹 페이지에 이미지를 그리는 기술이며, 동적인 이미지를 표현하는 웹 표준 기술이다.)
+<dialog>
+Ex)
+    <table>
+    <tr>
+        <th>January <dialog open>This is an open dialog window 열려있는 대화 상자 창!!</dialog></th>
+        <th>February</th>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>28</td>
+    </tr>
+    </table>
 
-    <caption> Defines a table caption
-    (테이블의 제목을 표현하기 위해 사용 합니다.)
-
-    <colgroup> Defines groups of table columns
-    [span]
-    (서식 지정을 위해 표의 하나 이상의 열 그룹을 지정, 각 행에 대해 각 셀의 스타일을 반복하는 대신 전체 열에 스타일을 적용하는 데 유용)
-
-    ---------------------------------------------------------------------------------------------------------------------------------------
-
-    <details> Defines details of an element
-    [open]
-    (사용자가 필요에 따라 보거나 숨길 수 있는 추가 세부 정보를 지정합니다. 사용자가 열고 닫을 수 있는 대화형 위젯을 만드는데 사용 할 수 있습니다. 어떤 종류의 내용이라도 이 태그 안에 넣을 수 있습니다.)
-
-    <del> Defines deleted text
-    [cite, datetime]
-    (텍스트를 삭제했음을 나타냅니다. 취소선이 있는게 기본 모양 입니다.)
-
-    <dialog> Defines a dialog(conversation)
-    (대화상자나 창을 정의 합니다. 쉽게 웹페이지에 팝업 대화상자와 조동사를 만들 수 있습니다)
-
-    ---------------------------------------------------------------------------------------------------------------------------------------
+대화 상자 또는 창을 정의 합니다. 웹페이지에서 팝업 대화상자와 모달을 쉽게 만들 수 있게 해줍니다.
