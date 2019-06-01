@@ -1,0 +1,41 @@
+/*
+
+첫번째는 selector파트 두번째는 property 파트다
+기본 property-name: value; ---> 무조건 소문자이며 중간에 공백이 없다 그리고 value 마지막에 꼭! ;(세미클론) 이걸 절대로 잊지말아야한다. 안그러면 오류남)
+그럼  selector 사용법은? 만약 이 property를 내 html의 h1에 연결하고 싶다면?
+
+h1을 쓰고 괄호 열고 아까 정리한 property를 붙여넣기 하면 된다.
+
+h1 {
+    property-name: value;
+}
+저 괄호 안에 수많은 property를 원하는 만큼 넣을 수 있다. 그 원한는 많은 넣은 property들은 h1에 적용이 된다.
+
+이 h1 괄호가 selector이며, 태그, 링크, 문단, 헤더, 푸터가 될 수도 있다. 모든 태그 이름이 해당된다. div도 가능함.
+
+해당 예제 자리인 h1에 ID, Class를 쓸 수도 있는데 ID의 경우 #이랑 같이 작성해야한다.
+
+#name {
+    property-name: value;
+}
+Class의 경우는
+
+.name {
+    property-nmae: value;
+}
+이렇게 작성해야되며
+
+둘다 섞어서 쓸수도 있다
+
+h1 .name {
+    property-name: value;
+}
+이런식으로 태그 + class
+
+또한
+
+selector (id, class, tag, name) {
+    property-name: value;
+}
+이것도 가능하다.
+*/
