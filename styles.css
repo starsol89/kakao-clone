@@ -39,3 +39,9 @@ selector (id, class, tag, name) {
 }
 이것도 가능하다.
 */
+h1 { 
+    color: blue;
+}
+h2 {
+    color: cadetblue;
+}
