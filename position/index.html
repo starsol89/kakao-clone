@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 400%;
+            background-color: red;
+        }
+        /*position Fixed(고정)
+        #boxOne{
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            position:static;----> static은 디폴트 값으로 이해하면 된다.
+        }
+        #boxTow{
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            position:fixed;
+            top: 10px;
+            left: 500px;
+        }
+        */
+        .abs-box{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+            /* position relative의 역활은 abs-child에 쓰인 position absolute와 함께 쓰인다 
+            부모 요소는 자식 요소를 자신의 박스 안에서 움직이게 할수있다 아니 포함 시켜 놓을수있다. */
+        }
+        .abs-child{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
+    <!--position Fixed
+    <div id="boxOne">
+        <div class="box-chid"></div>
+    </div>
+    <div id="boxTow">
+        <div class="box-chid"></div>
+    </div>
+-->
+</body>
+</html>
