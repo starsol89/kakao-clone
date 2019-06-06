@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectors and Pseudo Selector</title>
+    <style>
+        input[required="required"]{
+            background-color: bisque;
+        }
+        input{
+            border:1px solid black;
+        }
+        .box{
+            background-color: green;
+            display: block;
+            height: 100px;
+            border: 1px solid black;
+        }
+        /*(3n+1) ---->>  처음 첫 줄에서 3번째 박스만 pink로 선택*/
+        .box:nth-child(3n+1){
+            background-color: pink; 
+        }
+    </style>
+</head>
+<body>
+    <div class="containner">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box">
+            <input type="password" required="required">
+            <input type="submit" required="required">
+        </div>
+    </div>
+</body>
+</html>
