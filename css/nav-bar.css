@@ -18,3 +18,26 @@
 .nav i {
   font-size: 20px;
 }
+
+/*우리가 원하는 위치에 놓기 위해 대화상자 모양을 부모로 가지게 포지션을 잡아준다.*/
+.nav .nav__list-link {
+  position: relative;
+}
+
+/* 위에 처럼 부모 포지션을 잡아놓고 자식 포지션을 주게 되면 대화상자 박스에 nav__badge가 위치하게 된다. 그런 후 이런 작업을 통해 위치를 잡아준다.*/
+.nav .nav__badge {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  font-size: 10px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  /*가운데 정렬*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background의 모양을 원 모양으로 잡아준다*/
+  border-radius: 50%;
+}
