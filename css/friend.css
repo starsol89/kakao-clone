@@ -6,10 +6,44 @@
 
 .friend .friend__avatar {
   width: 50px;
-  border-radius: 35%;
+  border-radius: 38%;
 }
 
 /* .friend__avatar.g-avatar 붙여서 써주는 의미는 이 class를 둘 다 가진 element에 적용 된다는 의미다. */
 .friend__avatar.g-avatar {
-  /* width: 70px; */
+  width: 70px;
+}
+
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-content: center;
+}
+
+.friend__content .friend__name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+
+/* soilid class name 덕분에 우리는 이걸 활용해서 쉽게 css를 적용해 줄수있다. */
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  opacity: 0.5;
+}
+
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
 }

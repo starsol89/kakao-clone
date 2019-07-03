@@ -5,6 +5,8 @@
 @import "nav-bar.css";
 @import "friend.css";
 
+/* 이곳은 global styles을 넣는 곳이다. */
+
 /* 300px에 padding 20px를 주게 되면 더이상 box는 300px가 아니게 된다. 우린 padding에 20px의 값을 주었으니까
 그렇다면 우리는 300px의 box값을 얻으려면 320px 사이즈의 box를 만들고 padding 값 20px 을 주면된다. 
 (300px는 width를 의미)
@@ -24,4 +26,5 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
