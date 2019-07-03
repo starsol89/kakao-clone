@@ -1,0 +1,15 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 35%;
+}
+
+/* .friend__avatar.g-avatar 붙여서 써주는 의미는 이 class를 둘 다 가진 element에 적용 된다는 의미다. */
+.friend__avatar.g-avatar {
+  /* width: 70px; */
+}

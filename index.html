@@ -52,19 +52,27 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <!--이미지폴더와 이미지 이름은 소문자로 해주는게 좋다.-->
-              <!--g-avatar는 글로벌 Avatar 를 만들었다고 생각해야한다.즉, 글로벌한 스타일을 위한 파일을 만들거고 그 스타일은 웹사이트의 모든 곳에 영향을 미칠 것이다.-->
-              <img src="images/byc.jpg" alt="" class="chat__byc g-avatar" />
-              <div class="chat__content">
-                <span class="chat__username">
-                  Byc
-                </span>
-                <span class="chat__preview">Going home!</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="images/byc.jpg"
+                  alt=""
+                  class="g-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Byc
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  March 8
+                </span>
+              </div>
             </div>
           </a>
         </li>
