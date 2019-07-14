@@ -74,12 +74,7 @@
   /* avatar를 수직으로 가운데 정렬 시켜준다는 의미 
   align-items: center; */
   align-items: flex-start;
-  width: 50%;
   margin-bottom: 20px;
-}
-
-.message .message__content {
-  width: 80%;
 }
 
 .incoming-message {
@@ -101,11 +96,13 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
-  border-radius: 15px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
 }
 
 .incoming-message .message__author {
-  margin-top: 10px;
+  margin-top: 25px;
   display: block;
   font-weight: 600;
   font-size: 12px;
@@ -113,8 +110,10 @@
 
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px;
+  background-image: linear-gradient(to right, #be93c5, #7bc6cc);
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
 }
