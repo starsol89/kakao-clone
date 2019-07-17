@@ -32,22 +32,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fcfcfc;
-  padding: 0px 20px;
-}
-
-.chat__write {
-  bottom: 0px;
   width: 100%;
-  border-radius: 0;
-  padding: 20px 60px;
-  width: 100%;
-  border: none;
-  font-size: 14px;
 }
 
 .chat__icon-left {
   position: absolute;
+  left: 10px;
 }
 
 .chat__icon-right {
@@ -55,8 +45,28 @@
   right: 10px;
 }
 
+/* html에서는 아이콘이 input 다음에 있어야만 이런 transition을 할 수 있다. */
+.chat__write {
+  margin: 0 auto;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0;
+  padding: 20px 60px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out, transfrom 0.5s ease-in-out;
+}
+
+/* html에서는 아이콘이 input 다음에 있어야만 이런 transition을 할 수 있다. */
 .chat__write:focus {
   outline: none;
+  width: 80%;
+  transform: translateY(-100px);
+  border-radius: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
 /* html에서는 아이콘이 input 다음에 있어야만 이런 transition을 할 수 있다. */
