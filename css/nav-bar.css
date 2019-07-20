@@ -41,3 +41,18 @@
   /*background의 모양을 원 모양으로 잡아준다*/
   border-radius: 50%;
 }
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
