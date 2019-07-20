@@ -1,0 +1,26 @@
+.bigScreen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fce006;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0px 20px;
+  display: none;
+  z-index: 4;
+}
+
+/* 기본적으로 media가 screen이 최소 550px 이거나 그 이상이면 'make your screen small' 이라고 말하도록 만들어둔 것이다. */
+@media screen and (min-width: 550px) {
+  .bigScreen {
+    display: flex;
+  }
+}
